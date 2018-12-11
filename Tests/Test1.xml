@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tests>
+    <test id="1" inputFile="File1.csv">
+        <summary>This is sample summary</summary>
+        <description>This is sample description</description>
+        <precondition>
+            <action action="open" value="http://www.blazedemo.com">Launch blazedemo</action>
+            <action action="open" value="http://www.blazedemo.com">Launch blazedemo2</action>
+        </precondition>
+        <steps>
+            <step>
+                <action action="select" element_name="fromPort" value="Philadelphia">Choose Departure City</action>
+                <action action="select" element_name="toPort" value="Berlin">Choose Destination City</action>
+                <action action="click" elememt_cssSelector="input[type=submit][value='Find Flights']">Click Find Flights</action>
+                <expectation verify="pagetitle" value="BlazeDemo - reserve">BlazeDemo - reserve page is loaded</expectation>
+            </step>
+        </steps>
+    </test>
+    <test id="2" inputFile="File1.csv">
+        <summary>This is sample summary</summary>
+        <description>This is sample description</description>
+        <precondition>
+            <action action="open" value="http://www.blazedemo.com">Launch blazedemo</action>
+            <action action="open" value="http://www.blazedemo.com">Launch blazedemo2</action>
+        </precondition>
+        <steps>
+            <step>
+                <action action="select" element_name="fromPort" value="Philadelphia">Choose Departure City</action>
+                <action action="select" element_name="toPort" value="Berlin">Choose Destination City</action>
+                <action action="click" elememt_cssSelector="input[type=submit][value='Find Flights']">Click Find Flights</action>
+                <expectation verify="pagetitle" value="BlazeDemo - reserve">BlazeDemo - reserve page is loaded</expectation>
+            </step>
+        </steps>
+    </test>
+</tests>
